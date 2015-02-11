@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-	<meta charset="UTF-8">
-	<title></title>
+<head>
+    <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.0/dijit/themes/soria/soria.css" />
 </head>
 <body>
-HELLO
+
+<script type="text/javascript">
+    {% autoescape off %}
+        var dojoConfig = {
+            baseUrl: '//ajax.googleapis.com/ajax/libs/dojo/1.10.0/dojo',
+            paths: {
+                'myapp': '/static/js/myapp'
+            }
+        };
+    {% endautoescape %}
+</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.10.0/dojo/dojo.js"></script>
+<script type="text/javascript">
+    require(['myapp/app']);
+</script>
+
+
+
+
+
 </body>
 </html>

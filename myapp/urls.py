@@ -16,5 +16,5 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 
-	url(r'^$', TemplateView.as_view(template_name='myapp.html'))
+	url(r'^dojo/?$', TemplateView.as_view(template_name='myapp.html'))
 )
